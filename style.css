@@ -1,0 +1,161 @@
+body {
+    font-family: verdana,arial,sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+#content {
+    width:100%;
+    margin: 0 auto; 
+    background-color: white;
+}
+header {
+    margin: 0;
+    padding: .5em 2em;
+    background-color: #0ee5dd; 
+}
+header h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0;
+    color: white;
+    text-align: center;
+}
+#controls {
+   width: 80%;
+   margin: 0 auto;
+   padding: 1em;
+   text-align: center;
+}
+.button {
+    font-size: 1em;
+    padding: 5px 15px;
+    background: #bbd0f7; 
+    border: 1px solid #bbd0f7;
+    border-radius: 7px;
+    color: black;    
+}
+
+/* Add extra space between buttons */
+#browse { margin-right: 40px; }
+#add { margin-left: 40px; }
+
+/* Search controls */
+.search {
+    font-size: 1em;
+    padding: 6px 1px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    text-align: left;   
+}
+select {
+    font-size: 1em;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 7px;
+} 
+#main {
+    margin: 0 2em;
+}
+table {
+    font-family: verdana,arial,sans-serif;
+    font-size: 1em;
+    color: darkslategray;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+}
+table th {
+    font-size: 1.063em;
+    border-width: .0625em;
+    padding: .625em;
+    background-color: #87aff6; 
+}
+table td {
+    padding: .625em;
+    border-width: .0625em;
+    border-bottom: .0625em solid #0ee5dd; 
+}
+
+a:link { 
+    text-decoration: none;
+    color: royalblue;
+}
+a:visited { 
+    color: royalblue; 
+}
+a:hover { 
+    background-color: gainsboro;
+}
+
+/* Input styles */
+.flex-input {
+   display: flex;
+   flex-direction: column;
+   margin: 1em 3em;
+}
+.inputtext {
+   font-size: 0.9em;
+   font-family: verdana, arial, sans-serif;
+}
+
+/* span > label { margin-top: .5em; } */
+
+label {
+    font-size: 100%;
+    font-weight: 600;
+    color: royalblue;
+    width: 6em;
+    margin-right: 1em;
+    text-align: left; 
+}
+
+#input {
+    margin: .5em;
+}
+input[type=number], input[type=text], textarea {
+    padding: .3em;
+    margin: .5em 0;
+    border: 1px solid silver;
+    border-radius: .3em;
+    box-sizing: border-box;
+} 
+
+span.error {
+	color: red;
+	margin-top: 0.625em;
+}
+
+.flex-container {
+    display: flex;
+    margin: 1em;
+    align-items: center; 
+}
+section#input { flex: 5; }
+    
+aside#cover { flex: 4; }
+
+img.coverimg { max-width: 100%; }
+
+.fa-lg {color: #da1d1d; }
+
+footer {
+    margin-top: 1em;
+    padding: .2em;
+    font-size: 0.813em;
+    text-align: center;
+    color: white;
+    background-color: #0ee5dd;
+}
+
+@media (min-width: 32em) { 
+    .flex-input {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    label {
+        text-align: right;
+	//margin-top: .5em;
+    }
+}
